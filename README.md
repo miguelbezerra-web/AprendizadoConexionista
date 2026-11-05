@@ -64,11 +64,11 @@ h = 1 / (1 + exp(-x * w1))
 2. Camada de Saída (y_pred): Combinação linear dos valores ativados h com os pesos w2 (ativação linear para regressão):
 y_pred = h * w2
 
-**Passo 2: Cálculo da Perda (Loss)**
+**Passo 2: Cálculo da Perda (Loss) -->**
 Mede a divergência entre a previsão da rede (y_pred) e os rótulos reais (y) utilizando o Erro Quadrático Total (Sum of Squared Errors):
 Loss = sum((y_pred - y)^2)
 
-**Passo 3: Backpropagation (Retropropagação)**
+**Passo 3: Backpropagation (Retropropagação) -->**
 Aplica a Regra da Cadeia para calcular a derivada parcial da função de perda em relação a cada conjunto de pesos:
 
 * Gradiente da Saída: grad_y_pred = 2 * (y_pred - y)
@@ -77,7 +77,7 @@ Aplica a Regra da Cadeia para calcular a derivada parcial da função de perda e
 * Gradiente em relação a w1: grad_w1 = x^T * (grad_h * h * (1 - h))
 (Nota: O termo h * (1 - h) representa a derivada exata da função de ativação Sigmóide).
 
-**Passo 4: Atualização dos Parâmetros**
+**Passo 4: Atualização dos Parâmetros -->**
 Ajusta os pesos no sentido oposto ao gradiente usando Gradiente Descendente (SGD) com taxa de aprendizado de 0.0001 (1e-4):
 w1 = w1 - 0.0001 * grad_w1
 w2 = w2 - 0.0001 * grad_w2
