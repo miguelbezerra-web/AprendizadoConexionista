@@ -1,5 +1,6 @@
 # AprendizadoConexionista
 #**EXPLICAÇÃO DA REDE NEURAL DOS SLIDES DE FEI-FEI LEE**
+
 Redes Neurais Conexionistas: Implementação de MLP em NumPy
 
 Este documento descreve a implementação de uma Rede Neural Perceptron Multicamadas (MLP) utilizando apenas a biblioteca NumPy. O código demonstra como realizar a propagação direta (Forward Pass), o cálculo da perda (Loss) e o algoritmo de retropropagação (Backpropagation) de forma analítica, sem o uso de frameworks com diferenciação automática (como PyTorch ou TensorFlow).
