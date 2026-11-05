@@ -36,13 +36,12 @@ x, y = randn(N, D_in), randn(N, D_out)
 w1, w2 = randn(D_in, H), randn(H, D_out)
 
 **Loop de treinamento (2000 épocas)**
-
+```
 for t in range(2000):
 # 1. Forward Pass
 h = 1 / (1 + np.exp(-x.dot(w1)))  # Ativação Sigmóide na camada oculta
 y_pred = h.dot(w2)                 # Saída linear
 
-```
 # 2. Cálculo da Função de Perda (SSE - Erro Quadrático Total)
 loss = np.square(y_pred - y).sum()
 print(t, loss)
