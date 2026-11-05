@@ -1,4 +1,4 @@
-# Aprendizado Conexionista: EXPLICAÇÃO DA REDE NEURAL DOS SLIDES DE FEI-FEI LEE**
+# Aprendizado Conexionista: EXPLICAÇÃO DA REDE NEURAL DOS SLIDES DE FEI-FEI LEE
 
 Redes Neurais Conexionistas: Implementação de MLP em NumPy
 
