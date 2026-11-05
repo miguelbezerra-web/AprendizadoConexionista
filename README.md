@@ -5,7 +5,7 @@ Redes Neurais Conexionistas: Implementação de MLP em NumPy
 
 Este documento descreve a implementação de uma Rede Neural Perceptron Multicamadas (MLP) utilizando apenas a biblioteca NumPy. O código demonstra como realizar a propagação direta (Forward Pass), o cálculo da perda (Loss) e o algoritmo de retropropagação (Backpropagation) de forma analítica, sem o uso de frameworks com diferenciação automática (como PyTorch ou TensorFlow).
 
-1. Arquitetura e Dimensões
+**1. Arquitetura e Dimensões**
 
 A rede possui uma arquitetura Feedforward Fully Connected (totalmente conectada) com 3 camadas:
 
@@ -21,7 +21,7 @@ Inicialização dos Parâmetros:
 * Pesos da Camada 1 (w1): Matriz de dimensão (1000, 100).
 * Pesos da Camada 2 (w2): Matriz de dimensão (100, 10).
 
-2. Código-Fonte em Python
+**2. Código-Fonte em Python**
 
 import numpy as np
 from numpy.random import randn
@@ -59,7 +59,7 @@ w2 -= 1e-4 * grad_w2
 
 ```
 
-3. Passo a Passo do Algoritmo
+**3. Passo a Passo do Algoritmo**
 
 Passo 1: Forward Pass (Propagação Direta)
 
@@ -86,6 +86,6 @@ Ajusta os pesos no sentido oposto ao gradiente usando Gradiente Descendente (SGD
 w1 = w1 - 0.0001 * grad_w1
 w2 = w2 - 0.0001 * grad_w2
 
-4. Contexto Pedagógico
+**4. Contexto Pedagógico**
 
 Este exemplo foi popularizado nos cursos de Visão Computacional e Deep Learning de Stanford (CS231n), liderados por Fei-Fei Lee e Justin Johnson. O objetivo principal do slide é demonstrar o cálculo explícito e manual de gradientes antes de apresentar aos estudantes as abstrações modernas de autodiferenciação fornecidas por bibliotecas como PyTorch (torch.autograd) e TensorFlow.
