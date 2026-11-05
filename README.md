@@ -13,7 +13,6 @@ A rede possui uma arquitetura Feedforward Fully Connected (totalmente conectada)
 * Camada Oculta (H): 100 neurônios.
 * Camada de Saída (D_out): 10 neurônios.
 
-
 Inicialização dos Parâmetros:
 
 * Entradas (x): Matriz de dimensão (64, 1000) gerada aleatoriamente.
